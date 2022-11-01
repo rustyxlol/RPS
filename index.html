@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPS</title>
+    <link rel="stylesheet" href="/src/css/normalize.css" />
+    <link rel="stylesheet" href="/src/css/skeleton.css" />
+    <link rel="stylesheet" href="/src/css/custom.css" />
+    <script src="src/js/game.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row header"><h1>Rock Paper Scissors</h1></div>
+      <div class="row scores">
+        <table>
+          <thead>
+            <p class="round-text">
+              Round: <span class="round-counter">1</span>
+            </p>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Player</th>
+              <th>Computer</th>
+            </tr>
+            <tr>
+              <td class="player-score">0</td>
+              <td class="computer-score">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row game">
+        <div class="one-half column">
+          <div class="row player-choices">
+            <div class="one-third column rock">
+              <input
+                type="image"
+                name="player-rock"
+                class="u-full-width"
+                src="https://pbs.twimg.com/media/D8Kygw6XYAEeEg8.png"
+              />
+            </div>
+            <div class="one-third column paper">
+              <input
+                type="image"
+                name="player-paper"
+                class="u-full-width"
+                src="https://art.pixilart.com/2e29f43a603936d.png"
+              />
+            </div>
+            <div class="one-third column scissors">
+              <input
+                type="image"
+                name="player-scissors"
+                class="u-full-width"
+                src="https://pbs.twimg.com/media/D7mSLOMUIAAGYfa.png"
+              />
+            </div>
+          </div>
+          <div class="row player-selection">
+            <img
+              class="u-full-width player-selection-image"
+              src="https://pbs.twimg.com/media/D8Kygw6XYAEeEg8.png"
+            />
+          </div>
+        </div>
+        <div class="one-half column">
+          <div class="row computer-choices">
+            <div class="one-third column rock">
+              <img
+                class="u-full-width"
+                src="https://pbs.twimg.com/media/D8Kygw6XYAEeEg8.png"
+              />
+            </div>
+            <div class="one-third column paper">
+              <img
+                class="u-full-width"
+                src="https://art.pixilart.com/2e29f43a603936d.png"
+              />
+            </div>
+            <div class="one-third column scissors">
+              <img
+                class="u-full-width"
+                src="https://pbs.twimg.com/media/D7mSLOMUIAAGYfa.png"
+              />
+            </div>
+          </div>
+          <div class="row computer-selection">
+            <img
+              class="u-full-width computer-selection-image"
+              src="https://pbs.twimg.com/media/D8Kygw6XYAEeEg8.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row result"><h1 class="result-text"></h1></div>
+      <div class="row reset">
+        <h1><button class="btn-reset">Restart</button></h1>
+      </div>
+    </div>
+  </body>
+</html>

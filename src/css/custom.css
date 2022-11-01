@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: solid 1px red; */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+
+  background-color: #5d5d75;
+  background-image: radial-gradient(#acacac 2px, transparent 2px),
+    radial-gradient(#7f7f7f 2px, #5d5d75 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+  color: #ffffff;
+  max-width: 610px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr,
+td,
+th {
+  width: 50%;
+  text-align: center;
+  border: 1px solid black;
+}
+
+th {
+  font-size: 2rem;
+}
+
+.game,
+.player-choices,
+.computer-choices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.player-choices > * {
+  border: solid 1px white;
+}
+
+.computer-choices > * {
+  border: solid 1px gray;
+}
+
+.btn-reset {
+  color: white;
+  border: solid 1px white;
+}
+
+.round-text {
+  font-size: 3rem;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+input[type="image"] {
+  margin: 0px;
+  padding: 0px;
+}
