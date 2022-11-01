@@ -1,3 +1,5 @@
+@import url("http://fonts.cdnfonts.com/css/silkscreen");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,6 +10,7 @@
 html,
 body {
   height: 100%;
+  font-family: "Silkscreen Expanded", sans-serif;
 }
 
 html {
@@ -17,6 +20,7 @@ html {
 
 h1 {
   text-align: center;
+  font-size: 30px;
 }
 
 body {
@@ -42,7 +46,7 @@ td,
 th {
   width: 50%;
   text-align: center;
-  border: 1px solid black;
+  border: 5px solid black;
 }
 
 th {
@@ -58,16 +62,16 @@ th {
 }
 
 .player-choices > * {
-  border: solid 1px white;
+  border: solid 2px white;
 }
 
 .computer-choices > * {
-  border: solid 1px gray;
+  border: solid 2px gray;
 }
 
 .btn-reset {
   color: white;
-  border: solid 1px white;
+  border: solid 3px white;
 }
 
 .round-text {
